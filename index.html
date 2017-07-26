@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wide World Travel</title>
+</head>
+<body ng-app="app">
+	<div ng-controller="PlaceController">
+	<h3>Oh The Places You Will GO.... (if you've got the coin)</h3>
+		<ul>
+			<li ng-repeat="place in placeList">
+			{{place.type}}
+			{{place.title}} for {{place.price}}
+			</li>
+		</ul>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script src="app/app.js"></script>
+</body>
+</html>
